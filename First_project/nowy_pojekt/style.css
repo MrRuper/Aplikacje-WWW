@@ -1,0 +1,84 @@
+.page_interface {
+    display: flex; 
+    flex-direction: column;
+    height: 100vh;
+    font-size: 10;
+  }
+  
+  .menu-bar {
+    height: 2cm; /* ustawia wysokość paska menu */
+    background-color: #B8C8BE; /* dowolny kolor tła */
+    font-size: 24px;
+    border: 1px dashed black;
+  }
+  
+  .content-container {
+    flex-grow: 1; /* zajmuje resztę dostępnego miejsca */
+    display: flex;
+  }
+  
+  .left-rectangle {
+    flex-basis: 20%; /* szerokość lewego prostokąta */
+    background-color: #2EC192; /* dowolny kolor tła */
+    border: 1px dashed black;
+  }
+  
+  .right-rectangle {
+    display: flex;
+    flex-direction: column; /* Arrange child elements in a column */
+    flex-grow: 1;
+  }
+  
+  .right_up {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%; /* Set the height of the top rectangle */
+    background-color: aqua;
+  }
+
+  .right_up_left {
+    background-color: #69887E;
+    flex-basis: 70%;
+    border: 1px solid black;
+  }
+
+  .right_up_right {
+    background-color: #B9697D;
+    flex-grow: 1;
+    border: 1px solid black;
+  }
+  
+  .right_down {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the bottom rectangle to expand and fill remaining space */
+    background-color: blue;
+  }
+
+  .right_down_up {
+    display: flex;
+    flex-direction: row;
+    background-color: #81A75C;
+    flex-basis: 15%;
+    align-items: stretch;
+    line-height: 0;
+    
+
+  }
+
+  .right_down_down {
+    background-color: #69887E;
+    flex-grow: 1;
+  }
+  
+  .trapezoid {
+    flex-grow: 1; 
+    text-align: center;
+    background: #9DCD71;
+    transform: perspective(15px) rotateX(2deg);
+    cursor: pointer;
+    margin: 5px;
+    max-width: 8%;
+    border: 1px solid black;
+    line-height: 1;
+  }
